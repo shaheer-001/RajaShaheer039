@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,900&display=swap');
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:1rem solid rgba(0,0,0,.1);
+    --outline-hover:2rem solid var(--black);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: large;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: rgb(221, 221, 221);
+}
+.header{
+    position: fixed;
+    top: 0%; left: 0%; right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow:  var(--box-shadow);
+} 
+
+.header .logo{
+font-size:large;
+font-weight: 1rem;
+color:black;
+}
+
+.header .logo i{
+color: var(--orange);
+}
+
+.header .navbar a{
+    font-size:.9rem;
+    color:black;
+    margin: .2rem;
+    position:relative;
+    left: 4rem;
+}
+
+.header .navbar a:hover{
+    font-size:1rem;
+    margin: .25rem;
+    color:var(--orange);
+}
+
+.header .icons div{
+    size: .25rem;
+    height: 1rem;
+    width: 1.2rem;
+    line-height: 0.5rem;
+    cursor: pointer;
+    position:relative;
+    left: 4.5rem;
+}
+
+.header .icons div:hover{
+    color: var(--orange);
+}
+
+.header .search-box{
+    position: left;
+    border-radius: 112%;
+    color: #0f0f0f;
+}
+
+.header .search-form input{
+    position: right;
+    color: #080808;
+}
+
+.header .login-form{
+    position: absolute;
+    top:110%; right:-120%;
+    width:25rem;
+    height: 15rem;
+    box-shadow: var(--box-shadow);
+    padding-top:.5rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form.active{
+    right:.5rem;
+    transition: .4s linear;
+}
+.header .login-form h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-top: 2rem;
+}
+
+.header .login-form .box{
+    width: 20rem;
+    height: 2rem;
+    margin:.3rem;
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: .7rem;
+    padding:.5rem 0;
+    color:var(--light-color);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.header .login-form p a{
+    color:var(--orange);
+    text-decoration: underline;
+    
+}
+
+.header .login-form h4{
+    font-size: .9rem;
+    margin-top: .1rem;
+    cursor: pointer;
+}
+
+.header .login-form h4:hover{
+    color: var(--orange);
+    font-size: 1rem;
+}
+
+.header .registration-form{
+    position: absolute;
+    top:110%; right:-120%;
+    width:25rem;
+    height: 15rem;
+    box-shadow: var(--box-shadow);
+    padding-top:.5rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .registration-form.active{
+    right:.5rem;
+    transition: .4s linear;
+}
+.header .registration-form h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-top: .5rem;
+    margin-bottom: .5rem ;
+}
+
+.header .registration-form .box{
+    width: 20rem;
+    height: 2rem;
+    margin:.3rem;
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1rem;
+    color:var(--black);
+    text-transform: none;
+    position: relative;
+    top: -.3rem;
+}
+
+.header .registration-form h4{
+    font-size: .9rem;
+    margin-top: .1rem;
+    cursor: pointer;
+    
+}
+
+.header .registration-form h4:hover{
+    color: var(--orange);
+    font-size: 1rem;
+}
+
+.header .registration-form h5{
+    font-size: .8rem;
+    margin-top: -.7rem;
+    cursor: pointer;
+    position: relative;
+    top: -12.5rem;
+    right: -10rem;
+}
+
+.header .registration-form h5:hover{
+    color: var(--orange);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    background: url(https://st3.depositphotos.com/10654668/15550/i/600/depositphotos_155503044-stock-photo-italian-pizza-on-baking-paper.jpg);
+    background-size: 100% 100%;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    align-items: center;
+    width:20rem;
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 2.5rem;
+    align-content: center;
+    position:relative;
+    left: 10rem;
+}
+
+.home .content h3 span{
+    color:var(--orange);
+}
+
+.home .content p{
+    color:var(--black);
+    font-size: 1rem;
+    position:relative;
+    left: 10rem;
+}
+
+.restaurants .heading {
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.restaurants .heading span{
+    background: var(--orange);
+    color: var(--black);
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0% , 93% 50%, 100% 99% , 0% 100% , 7% 50%, 0% 0%);
+}    
+
+.restaurants .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap:.5rem;
+    padding: 2.5rem;
+    background-color: rgb(221, 221, 221);
+}
+
+.restaurants .box-container .box{
+    border-radius: .5rem;
+    padding: .2rem;
+    width: 18rem;
+    height: 19rem;
+    margin-left: 7rem;
+    background:#fff;
+    text-align: center;
+}
+
+.restaurants .box-container .box:hover{
+    text-align: center;
+    border-style: solid;
+}
+
+.restaurants .box-container .box a:hover{
+    color: var(--orange);
+    font-size: 1.1rem;
+}
+
+.restaurants .box-container .box img{
+    margin:1rem;
+    height:8rem;
+}
+
+.restaurants .box-container .box h3{
+   font-size: 1.3rem;
+   color:var(--black);
+   line-height: 2rem;
+   font-weight: 400;
+}
+
+.restaurants .box-container .box p{
+    font-size: 1rem;
+    color:var(--light-color);
+    padding:1rem 0;
+    margin-bottom: -.2rem;
+}
+
+.features .box-container { 
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(10rem, 1fr));
+    
+    padding: 1rem;
+    margin-left: 15rem;
+    margin-right: 1.5rem;
+    margin-top: .3rem;
+}
+
+.features .box-container .box{
+    padding: 3rem;
+    background: white;
+    outline: var(--outline);
+    width: 35rem;
+    height: 32rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.features .box-container .box:hover{
+    outline: var(--outline-hover);
+}
+
+.features .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+    border-radius: 30%;
+}
+
+.features .box-container .box h3{
+   
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+
+.features .box-container .box p{
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+
+.review .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 6rem;
+    
+    padding: 1rem;
+    margin-left: .5rem;
+    margin-right: 1.5rem;
+    margin-top: .3rem;
+}
+
+
+.review .box-container .box{
+    background: white;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 1cm;
+    width: 8cm;
+
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .1s linear;
+}
+
+.review .box-container .box:hover{
+    outline: var(--outline-hover);
+}
+
+.review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 30%;
+}
+
+.review .box-container .box p{
+padding: 1rem 0;
+line-height: 1.8;
+color: var(--light-color);
+font-size: 1.5rem;
+
+}
+
+.review .box-container .box h3{
+    padding-bottom: .5rem ;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.review .box-container .box .stars i{
+
+    color: var(--orange);
+    font-size: 1.7rem;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.heading span{
+    background: var(--orange);
+    color: var(--black);
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0% , 93% 50%, 100% 99% , 0% 100% , 7% 50%, 0% 0%);
+    
+}
+
+.aboutus .heading{
+    background: rgb(255, 255, 255);
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    color: var(--black);
+}
+
+.aboutus .box-container{
+    border-radius: 1.5rem;
+    padding: .2rem;
+    width: 65rem;
+    height: 19rem;
+    margin-left: 3rem;
+    background:#fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.aboutus .box-container h3{
+    font-size: 1.2rem;
+    color: var(--black);
+    position:relative;
+    margin-right: 13rem;
+    margin-top: 4rem;
+    margin-left: 13rem;
+    line-height: 2rem;
+}
+
+.aboutus .box-container h3 span{
+    color: var(--orange);
+}
+
+
+.reviewus .heading{
+    background: rgb(255, 255, 255);
+    padding: 1.5rem;
+    background-size: 555rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 7rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 1rem;
+    color: var(--black);
+}
+
+.reviewus .heading span{
+    background: var(--orange);
+    color: var(--black);
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0% , 93% 50%, 100% 99% , 0% 100% , 7% 50%, 0% 0%);
+}
+
+.reviewus form{
+    position:relative;
+    left: 25rem;
+}
+
+.reviewus form input,.reviewus form textarea{
+    width: 20rem;
+    height: 40px;
+    padding: 10px;
+    background-color: white;
+    color: #1e1e1e;
+    border-radius: 5px; 
+}
+
+.reviewus form textarea{
+    width: 20rem;
+    height: 10rem;
+    padding: 10px;
+    background-color: white;
+    color: #1e1e1e;
+    border-radius: 5px; 
+}
+
+.reviewus-btn{
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+    margin-left: 8.8rem;
+    cursor: pointer;
+    color: #000000;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.reviewus-btn:hover{
+    border-style: solid;
+    border-color: var(--orange);
+}
+
+.footer{
+    background: #fff;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:.5rem;
+    padding:-55rem;
+}
+
+.footer .box-container .box{
+    margin-bottom: -2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1rem;
+    color:var(--black);
+    padding:1rem 0;
+    position:relative;
+    left: 15rem;
+    margin-top: 2rem;
+}
+
+.footer .box-container .box h4{
+    font-size: 1rem;
+    color:var(--black);
+    padding:1rem 0;
+    margin-top: 2rem;
+    position:relative;
+    left: 8rem;
+}
+
+.footer .box-container .box h3 i{
+    color:var(--orange);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    line-height: normal;
+    font-size: .8rem;
+    color:var(--light-color);
+    padding:1rem 0;
+    position:relative;
+    left: 8rem;
+}
+
+.footer .box-container .box .links i{
+    color:var(--orange);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 1rem;
+}
+
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1rem;
+    color:var(--light-color);
+    padding:1rem 0;
+    position:relative;
+    left: 15rem;
+}
+
+.footer .box-container .box .share a{
+    height:2rem;
+    width:2rem;
+    line-height:2rem;
+    border-radius: 0rem;
+    font-size: 1rem;
+    color:var(--black);
+    margin-right: .2rem;
+    background: #eee;
+    text-align: center;
+    position:relative;
+    left: 15rem;
+}
+
+.footer .box-container .box .share a:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 5rem;
+    padding:1rem;
+    padding-top:1.5rem;
+    font-size: 1rem;
+    color:var(--black);
+    border-top: var(--border);
+}
+
+.footer .credit span{
+    color:var(--orange);
+}
